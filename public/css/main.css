@@ -4,6 +4,7 @@
 @import 'sidenavbar.css';
 @import 'forms.css';
 @import 'utilities.css';
+@import 'create.css';
 
 body {
     margin: 0;
