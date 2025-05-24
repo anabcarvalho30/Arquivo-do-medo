@@ -1,0 +1,121 @@
+:root {
+    --sidebar-width: 15vw;
+    --icon-size: calc(var(--sidebar-width) * 0.2);
+    --icon-margin: calc(var(--sidebar-width) * 0.05);
+    --primary-color: #343a40;
+    --secondary-color: #495057;
+    --accent-color: #6c757d;
+    --text-color: #f8f9fa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    min-height: 100vh;
+    color: #212529;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: 80px;
+    max-width: 160px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.sidebar-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.sidebar-header img {
+    width: calc(var(--sidebar-width) * 0.4);
+    height: auto;
+    max-width: 120px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Centraliza verticalmente usando margem automática */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-link {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color) !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: calc(var(--icon-size) * 0.6);
+    transition: all 0.3s ease;
+    margin: var(--icon-margin) 0;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    color: var(--text-color) !important;
+}
+
+.user-avatar {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-avatar:hover {
+    transform: scale(1.05);
+    border-color: var(--text-color);
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --sidebar-width: 80px;
+    }
+    
+    .sidebar-header img {
+        width: 80%;
+    }
+}
