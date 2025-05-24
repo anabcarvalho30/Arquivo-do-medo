@@ -1,10 +1,14 @@
-<%- include('partials/head', { title: 'Home', content: `
-    <h1>Bem-vindo ao Arquivo do Medo</h1>
-    <p>Esta é a página inicial do seu projeto.</p>
-    <div class="card mt-4">
-        <div class="card-body">
-            <h5 class="card-title">Conteúdo Principal</h5>
-            <p class="card-text">Aqui você pode adicionar o conteúdo específico da página inicial.</p>
+<%- include('partials/head', { 
+    title: 'Home',
+    currentPage: 'home',
+    content: `
+        <h1>Bem-vindo ao Arquivo do Medo</h1>
+        <p>Esta é a página inicial do seu projeto.</p>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Conteúdo Principal</h5>
+                <p class="card-text">Aqui você pode adicionar o conteúdo específico da página inicial.</p>
+            </div>
         </div>
-    </div>
-`}) %>
+    `
+}) %>
