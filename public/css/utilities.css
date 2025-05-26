@@ -3,11 +3,7 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 1670px) {
-    :root {
-        --sidebar-width: 80px;
-    }
-    
+@media (max-width: 3000px) {    
     .sidebar-header img {
         width: calc(var(--sidebar-width) * 0.8);
     }
