@@ -66,7 +66,10 @@ https://github.com/user-attachments/assets/b1d7caac-2d53-4c6c-9a6c-3f3d528adf8f
 
 ### 📂 Clonar o repositório
 
+- Arquivo rodando em [localhost](http://localhost:3000/)
+
 ```bash
 git clone https://github.com/anabcarvalho30/Arquivo-do-medo
 cd arquivo-do-medo
 node app.js
+
