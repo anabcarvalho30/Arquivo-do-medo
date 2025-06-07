@@ -26,6 +26,12 @@
 
 ---
 
+## Rotas
+
+![Arquivo-do-medo](/ReadmeMidia/Rotas.png)
+
+---
+
 ## 🎭 Diferenciais
 
 - 🌑 Interface imersiva com tema de terror  
