@@ -29,6 +29,7 @@
 ## Rotas
 
 ![Arquivo-do-medo](/ReadmeMidia/Rotas.png)
+![Arquivo-do-medo](/ReadmeMidia/Caminho.png)
 
 ---
 
